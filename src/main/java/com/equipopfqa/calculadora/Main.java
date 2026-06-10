@@ -8,8 +8,8 @@ public class Main {
 
         ejecutarOperacion("Suma", 10, "+", 5, calculadora.sumar(10, 5), historial);
         ejecutarOperacion("Resta", 8, "-", 3, calculadora.restar(8, 3), historial);
-        ejecutarOperacion("Multiplicación", 4, "*", 6, calculadora.multiplicar(4, 6), historial);
-        ejecutarOperacion("División", 20, "/", 4, calculadora.dividir(20, 4), historial);
+        ejecutarOperacion("Multiplicacion", 4, "*", 6, calculadora.multiplicar(4, 6), historial);
+        ejecutarOperacion("Division", 20, "/", 4, calculadora.dividir(20, 4), historial);
 
         try {
             calculadora.dividir(15, 0);
