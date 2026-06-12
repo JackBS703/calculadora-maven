@@ -11,8 +11,6 @@ Parcial Final — Laboratorio Práctico (25% de la nota)
 - Esteban Cano Ramírez
 - Yeimy Daniela Herrera Bedoya
 
-**Repositorio:** [https://github.com/JackBS703/calculadora-maven/tree/feature/pom-sonar](https://github.com/JackBS703/calculadora-maven/tree/feature/pom-sonar)
-
 ---
 
 ## Objetivo del Laboratorio
@@ -69,6 +67,19 @@ calculadora-maven/
 
 ## Comandos Utilizados
 
+### Iniciar SonarQube
+```bash
+# En Linux/Mac
+$SONAR_HOME/bin/linux-x86-64/sonar.sh start
+
+# En Windows
+%SONAR_HOME%\bin\windows-x86-64\StartSonar.bat
+
+# Verificar que está corriendo (esperar ~1 minuto)
+# Abrir en el navegador: http://localhost:9000
+# Usuario por defecto: admin / admin
+```
+
 ### Compilar el proyecto
 ```bash
 mvn clean compile
@@ -92,7 +103,7 @@ mvn clean verify sonar:sonar \
 mvn package -DskipTests
 ```
 
----
+***
 
 ## Reglas de Calidad — Quality Gate `QG_Laboratorio`
 
