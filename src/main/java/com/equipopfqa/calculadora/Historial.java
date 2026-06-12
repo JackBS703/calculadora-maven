@@ -8,8 +8,7 @@ import java.util.List;
 
 public class Historial {
 
-    private static final DateTimeFormatter FORMATO_FECHA =
-            DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private static final DateTimeFormatter FORMATO_FECHA = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     private final List<String> operaciones;
 
@@ -17,7 +16,11 @@ public class Historial {
         this.operaciones = new ArrayList<>();
     }
 
-    public void registrarOperacion(double primerNumero, String operador, double segundoNumero, double resultado) {
+    public void registrarOperacion(
+            double primerNumero,
+            String operador,
+            double segundoNumero,
+            double resultado) {
         String fechaHora = LocalDateTime.now().format(FORMATO_FECHA);
         String operacion = String.format(
                 "[%s] %.2f %s %.2f = %.2f",
@@ -25,8 +28,7 @@ public class Historial {
                 primerNumero,
                 operador,
                 segundoNumero,
-                resultado
-        );
+                resultado);
         operaciones.add(operacion);
     }
 
