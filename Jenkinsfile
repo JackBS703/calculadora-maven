@@ -1,6 +1,6 @@
 pipeline {
     agent any
-// Segunda prueba Jenkins
+// Tercera prueba Jenkins
     // Disparador para revisar cambios en el repositorio cada minuto (SCM Polling)
     triggers {
         pollSCM('H/1 * * * *')
