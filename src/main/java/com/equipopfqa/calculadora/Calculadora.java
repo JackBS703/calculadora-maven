@@ -6,6 +6,26 @@ public class Calculadora {
         return primerNumero + segundoNumero;
     }
 
+    public double sumar2(double primerNumero, double segundoNumero) {
+        return primerNumero + segundoNumero;
+    }
+
+    public double sumar3(double primerNumero, double segundoNumero) {
+        return primerNumero + segundoNumero;
+    }
+
+    public double sumar4(double primerNumero, double segundoNumero) {
+        return primerNumero + segundoNumero;
+    }
+
+    public double sumar5(double primerNumero, double segundoNumero) {
+        return primerNumero + segundoNumero;
+    }
+
+    public double sumar6(double primerNumero, double segundoNumero) {
+        return primerNumero + segundoNumero;
+    }
+
     public double restar(double primerNumero, double segundoNumero) {
         return primerNumero - segundoNumero;
     }
