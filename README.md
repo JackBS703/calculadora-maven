@@ -141,9 +141,7 @@ Jenkins detecta cambios en el repositorio con **SCM Polling** usando la expresi�
 
 Las pruebas unitarias se ejecutan correctamente (0 errores, 0 fallos). El análisis de SonarQube termina con `ANALYSIS SUCCESSFUL`. El proyecto pasa la Quality Gate con las condiciones de duplicación e issues configuradas.
 
-### 🔄 Pendiente
-
-- **Yeimy Daniela Herrera Bedoya** — Configuración del repositorio en GitHub (ramas `main` y `develop`), webhook o SCM Polling activo en Jenkins, prueba end-to-end del flujo completo.
+- **Yeimy Daniela Herrera Bedoya** — Configuración del repositorio en GitHub (ramas `main` y `develop`), webhook o SCM Polling activo en Jenkins y pruebas end-to-end del flujo completo.
 
 ---
 

@@ -85,7 +85,7 @@ pipeline {
         failure {
             echo 'El pipeline falló. Enviando notificación por correo SMTP...'
             // Envío de correo utilizando el servidor SMTP global configurado en Jenkins
-            mail to: 'esteban.cano@example.com, yeimy.herrera@example.com, mateo.berrio@example.com, mariana.montoya@example.com',
+            mail to: 'esteban_cano82221@elpoli.edu.co, yeimy.herrera@example.com, mateo.berrio@example.com, mariana.montoya@example.com',
                  subject: "Pipeline Fallido: ${currentBuild.fullDisplayName}",
                  body: """Atención Equipo,
 
