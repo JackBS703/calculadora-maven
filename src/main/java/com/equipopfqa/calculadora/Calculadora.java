@@ -21,22 +21,6 @@ public class Calculadora {
         return temp;
     }
 
-        public double metodoLargo1(double a, double b) {
-        double temp = a + b;
-        temp = temp * 2;
-        temp = temp - 1;
-        temp = temp / 2;
-        temp = temp + 5;
-        temp = temp * 3;
-        temp = temp - 4;
-        temp = temp / 3;
-        temp = temp + 10;
-        temp = temp * 4;
-        temp = temp - 8;
-        return temp;
-    }
-
-    
 
     public double restar(double primerNumero, double segundoNumero) {
         return primerNumero - segundoNumero;
