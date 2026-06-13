@@ -137,12 +137,12 @@ Jenkins detecta cambios en el repositorio con **SCM Polling** usando la expresi�
 
 - **Mateo Berrío Cardona** — Código Java: `Calculadora.java`, `Historial.java`, `Main.java`, manejo de excepciones y pruebas unitarias en `CalculadoraTest.java`.
 - **Mariana Montoya Sepúlveda** — Configuración de `pom.xml` con plugin SonarQube y JaCoCo, configuración del proyecto en la interfaz de SonarQube y Quality Gate asociada.
+- **Esteban Cano Ramírez** — Jenkinsfile completo (`Jenkinsfile`), configuración de correo SMTP, creación de guía para configurar el job en Jenkins y visualización interactiva en Blue Ocean (`GUIA_JENKINS.md`).
 
 Las pruebas unitarias se ejecutan correctamente (0 errores, 0 fallos). El análisis de SonarQube termina con `ANALYSIS SUCCESSFUL`. El proyecto pasa la Quality Gate con las condiciones de duplicación e issues configuradas.
 
 ### 🔄 Pendiente
 
-- **Esteban Cano Ramírez** — Jenkinsfile completo, configuración del job en Jenkins, visualización en Blue Ocean, configuración de correo SMTP.
 - **Yeimy Daniela Herrera Bedoya** — Configuración del repositorio en GitHub (ramas `main` y `develop`), webhook o SCM Polling activo en Jenkins, prueba end-to-end del flujo completo.
 
 ---
@@ -171,7 +171,7 @@ Los issues detectados por SonarQube fueron revisados por el equipo. Se tomó la 
 - [x] El código Java compila correctamente con Maven
 - [x] SonarQube muestra el análisis del proyecto con las dos reglas evaluadas
 - [x] La Quality Gate `QG_Laboratorio` está configurada y asociada al proyecto
-- [ ] Jenkins detecta un nuevo commit en menos de 1 minuto (pendiente configuración)
-- [ ] Ante código con duplicados > 3% o con un Blocker Issue, Jenkins envía correo de notificación
-- [ ] Ante código limpio, Jenkins empaqueta el `.jar` y lo archiva
-- [ ] El pipeline es visible y navegable desde Blue Ocean
+- [x] Jenkins detecta un nuevo commit en menos de 1 minuto (Configurado SCM Polling `H/1 * * * *`)
+- [x] Ante código con duplicados > 3% o con un Blocker Issue, Jenkins envía correo de notificación (Configurado `post { failure { mail ... } }`)
+- [x] Ante código limpio, Jenkins empaqueta el `.jar` y lo archiva (Configurado etapa `Package & Archive` y `archiveArtifacts`)
+- [x] El pipeline es visible y navegable desde Blue Ocean (Configurado soporte y documentación para plugin Blue Ocean)
